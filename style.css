@@ -1,0 +1,119 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+::selection {
+  background: yellow;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0 0 0.75rem rgb(255, 225, 0));
+  transform: scaleY(0.66) transform-origin: bottom;
+}
+
+@keyframes shake {
+  0% {
+      transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+      transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+      transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+      transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+#center {
+  padding: 5vw;
+  text-align: center;
+  padding-top: 15vh;
+  position: fixed;
+  width: 80vw;
+  top: 30%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -40vw;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 25vh;
+}
+
+body,
+html {
+  font-family: "Balloon";
+  margin: 0;
+  background: url("https://media.giphy.com/media/3o6EhOYMhOTANYgHMk/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(128, 128, 128, 0.545);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: normal;
+  font-feature-settings: "kern";
+}
+
+
+.hoverimage {
+  position: absolute;
+  display: none;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 10;
+  pointer-events: none;
+}
+a:hover .hoverimage {
+  display: block;
+}

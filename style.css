@@ -15,7 +15,7 @@ img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
   filter: drop-shadow(0 0 0.75rem rgb(255, 225, 0));
-  transform: scaleY(0.66) transform-origin: bottom;
+  transform: scaleY(0.66) transform-origin; bottom:auto
 }
 
 @keyframes shake {
